@@ -709,3 +709,337 @@ font-size: 2.2rem;
 font-size: 2rem;
 }
 }
+
+
+/* =====================================================
+   RESPONSIVE MEJORADO
+   Se agrega al final para complementar los estilos actuales.
+   ===================================================== */
+
+/* Evita desbordamientos horizontales y adapta medios */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+/* Hace que el menú desplegable tome como referencia la barra */
+.navbar {
+    position: relative;
+}
+
+.top-bar-container,
+.navbar,
+.container,
+.footer-container {
+    width: 100%;
+}
+
+/* TABLETAS Y PANTALLAS MEDIANAS */
+@media (max-width: 900px) {
+    .top-bar-container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .top-bar-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 14px;
+    }
+
+    .top-bar-info span {
+        margin-right: 0;
+    }
+
+    .navbar {
+        padding: 12px 18px;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .hero {
+        padding: 85px 20px;
+    }
+
+    .hero h2 {
+        font-size: clamp(2rem, 5vw, 2.5rem);
+    }
+
+    .page-banner {
+        padding: 60px 20px;
+    }
+
+    .container {
+        padding: 60px 20px;
+    }
+
+    .about-grid,
+    .contacto-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .nivel-detalle-card {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .nivel-detalle-card img {
+        height: 260px;
+        min-height: 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .niveles-grid,
+    .pillars-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    .top-bar {
+        font-size: 0.75rem;
+        padding: 8px 10px;
+    }
+
+    .top-bar-container {
+        padding: 0 10px;
+        gap: 8px;
+    }
+
+    .top-bar-info {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .top-bar-social {
+        margin-top: 2px;
+    }
+
+    .top-bar-social a {
+        margin: 0 7px;
+    }
+
+    .navbar {
+        padding: 10px 14px;
+    }
+
+    .logo-container {
+        gap: 8px;
+        min-width: 0;
+    }
+
+    .logo-container img {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+    }
+
+    .logo-text h1 {
+        font-size: 1rem;
+    }
+
+    .logo-text span {
+        font-size: 0.7rem;
+    }
+
+    .hamburger {
+        flex-shrink: 0;
+        padding: 5px;
+    }
+
+    .nav-links {
+        gap: 0;
+        padding: 10px 16px;
+        max-height: calc(100vh - 75px);
+        overflow-y: auto;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 11px 8px;
+        font-size: 1rem;
+    }
+
+    .btn-admisiones {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 10px 18px;
+    }
+
+    .hero {
+        padding: 65px 16px;
+    }
+
+    .hero-badge {
+        font-size: 0.72rem;
+        padding: 6px 12px;
+    }
+
+    .hero h2 {
+        font-size: clamp(1.75rem, 8vw, 2.2rem);
+        line-height: 1.15;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .page-banner {
+        padding: 48px 16px;
+    }
+
+    .page-banner h2 {
+        font-size: clamp(1.7rem, 7vw, 2rem);
+    }
+
+    .page-banner p {
+        font-size: 0.95rem;
+    }
+
+    .container {
+        padding: 45px 16px;
+    }
+
+    .section-header {
+        margin-bottom: 35px;
+    }
+
+    .section-header h3,
+    .about-text h3 {
+        font-size: 1.75rem;
+    }
+
+    .section-header p {
+        font-size: 1rem;
+    }
+
+    .niveles-grid,
+    .pillars-grid,
+    .gallery-grid,
+    .features-list {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .nivel-body,
+    .nivel-detalle-body,
+    .pillar-card {
+        padding: 20px;
+    }
+
+    .nivel-detalle-card img {
+        height: 210px;
+    }
+
+    .about-section,
+    .contacto-section {
+        padding: 45px 0;
+    }
+
+    .gallery-filters {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 9px 14px;
+        font-size: 0.85rem;
+    }
+
+    .gallery-item img {
+        height: 210px;
+    }
+
+    .contacto-info,
+    .contacto-form {
+        padding: 24px 18px;
+    }
+
+    .contacto-info h3,
+    .contacto-form h3 {
+        font-size: 1.5rem;
+    }
+
+    .info-item {
+        gap: 10px;
+        overflow-wrap: anywhere;
+    }
+
+    .map-box iframe {
+        height: 200px;
+    }
+
+    .footer-container {
+        padding: 0 16px;
+    }
+
+    .footer-logo span {
+        font-size: 1.05rem;
+    }
+
+    .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        right: 16px;
+        bottom: 16px;
+        font-size: 1.7rem;
+    }
+}
+
+/* CELULARES MUY PEQUEÑOS */
+@media (max-width: 360px) {
+    .logo-container img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo-text h1 {
+        font-size: 0.9rem;
+    }
+
+    .hero h2 {
+        font-size: 1.65rem;
+    }
+
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .contacto-info,
+    .contacto-form {
+        padding: 20px 14px;
+    }
+}
