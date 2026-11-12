@@ -158,9 +158,12 @@ header {
 .hamburger {
     display: none;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1;
     color: var(--primary-blue);
+    user-select: none;
 }
+
 
 /* Hero Section (Inicio) */
 .hero {
