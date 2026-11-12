@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admisiones 2026 | Colegio Divino Salvador - La Estrella, Antioquia</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-info">
+                <span><i class="fas fa-map-marker-alt"></i> La Estrella, Antioquia</span>
+                <span><i class="fas fa-phone"></i> (604) 335 5553</span>
+            </div>
+            <div class="top-bar-social">
+                <a href="contacto.html"><i class="fab fa-facebook-f"></i></a>
+                <a href="contacto.html"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-container">
+                <img src="img/Logo Colegio Divino Salvador La Estrella (2).png" alt="Escudo Colegio Divino Salvador">
+                <div class="logo-text">
+                    <h1>Colegio Divino Salvador</h1>
+                    <span>La Estrella, Antioquia</span>
+                </div>
+            </a>
+            <div class="hamburger" id="hamburgerBtn"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="oferta-academica.html">Oferta Académica</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="admisiones.html" class="btn-admisiones">Admisiones 2026</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <span class="hero-badge">Inscripciones Abiertas</span>
+        <h2>Admisiones 2026</h2>
+        <p>Inicia el proceso de admisiones o resuelve tus inquietudes visitándonos o escribiéndonos.</p>
+    </section>
+
+    <section class="contacto-section">
+        <div class="container" style="padding-top: 0; padding-bottom: 0;">
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <h3>Proceso de Admisión</h3>
+                    <p>Te acompañamos en cada paso para que tu hijo haga parte de la familia Colegio Divino Salvador.</p>
+
+                    <div class="info-item">
+                        <i class="fas fa-1"></i>
+                        <div>
+                            <strong>Paso 1: Solicitud de Información</strong><br>
+                            Completa el formulario de admisiones o escríbenos directamente por WhatsApp.
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-2"></i>
+                        <div>
+                            <strong>Paso 2: Visita Guiada y Entrevista</strong><br>
+                            Agenda tu recorrido por nuestras instalaciones en La Estrella y conoce nuestro proyecto educativo.
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-3"></i>
+                        <div>
+                            <strong>Paso 3: Formalización de Matrícula</strong><br>
+                            Presenta la documentación requerida en secretaría académica.
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <a href="https://wa.me?text=Hola,%20quiero%20iniciar%20el%20proceso%20de%20admisiones%202026" target="_blank" rel="noopener" class="btn-admisiones" style="display:inline-block;">
+                            <i class="fab fa-whatsapp"></i> Chatear con Secretaría
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contacto-form">
+                    <h3>Formulario de Admisiones</h3>
+                    <form id="admissionForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre del Acudiente</label>
+                            <input type="text" id="nombre" required placeholder="Nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono de Contacto</label>
+                            <input type="tel" id="telefono" required placeholder="Ej. 316 333 5178">
+                        </div>
+                        <div class="form-group">
+                            <label for="nivel">Nivel de Interés</label>
+                            <select id="nivel" required>
+                                <option value="">Selecciona un nivel...</option>
+                                <option value="Preescolar">Preescolar</option>
+                                <option value="Básica Primaria">Básica Primaria</option>
+                                <option value="Básica Secundaria">Básica Secundaria</option>
+                                <option value="Educación Media">Educación Media</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje o Inquietud</label>
+                            <textarea id="mensaje" rows="4" placeholder="Cuéntanos el grado al que aspira el estudiante o cualquier inquietud"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Solicitud</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/Logo Colegio Divino Salvador La Estrella (2).png" alt="Logo Colegio Divino Salvador">
+                <span>Colegio Divino Salvador</span>
+            </div>
+            <p class="footer-text">Institución educativa privada comprometida con la formación integral en La Estrella, Antioquia.</p>
+            <div class="footer-copy">© 2026 Colegio Divino Salvador - Todos los derechos reservados.</div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me" class="whatsapp-float" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+    <script src="js/main.js"></script>
+</body>
+</html>

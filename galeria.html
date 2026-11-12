@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Colegio Divino Salvador - La Estrella, Antioquia</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-info">
+                <span><i class="fas fa-map-marker-alt"></i> La Estrella, Antioquia</span>
+                <span><i class="fas fa-phone"></i> (604) 335 5553</span>
+            </div>
+            <div class="top-bar-social">
+                <a href="contacto.html"><i class="fab fa-facebook-f"></i></a>
+                <a href="contacto.html"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-container">
+                <img src="img/Logo Colegio Divino Salvador La Estrella (2).png" alt="Escudo Colegio Divino Salvador">
+                <div class="logo-text">
+                    <h1>Colegio Divino Salvador</h1>
+                    <span>La Estrella, Antioquia</span>
+                </div>
+            </a>
+            <div class="hamburger" id="hamburgerBtn"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="oferta-academica.html">Oferta Académica</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="galeria.html" class="active">Galería</a></li>
+                <li><a href="admisiones.html" class="btn-admisiones">Admisiones 2026</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <span class="hero-badge">Vida Escolar y Campus</span>
+        <h2>Galería Institucional</h2>
+        <p>Conoce nuestros espacios de aprendizaje, actividades académicas y convivencia escolar en La Estrella.</p>
+    </section>
+
+    <section class="container">
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="campus">Instalaciones</button>
+            <button class="filter-btn" data-filter="academico">Vida Académica</button>
+            <button class="filter-btn" data-filter="comunidad">Comunidad y Valores</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="campus">
+                <img src="img/campus escolar 1.jpeg" alt="Campus Escolar">
+                <div class="gallery-caption">Espacios Seguros para el Aprendizaje</div>
+            </div>
+            <div class="gallery-item" data-category="academico">
+                <img src="img/aula escolar 1.jpg" alt="Aulas de Clase">
+                <div class="gallery-caption">Fortalecimiento en Lectura Crítica y Matemáticas</div>
+            </div>
+            <div class="gallery-item" data-category="comunidad">
+                <img src="img/acompañamiento.jpg" alt="Estudiantes">
+                <div class="gallery-caption">Acompañamiento Personalizado</div>
+            </div>
+            <div class="gallery-item" data-category="academico">
+                <img src="img/profesional con alumno.jpg" alt="Secundaria">
+                <div class="gallery-caption">Formación Científica y Bilingüismo</div>
+            </div>
+            <div class="gallery-item" data-category="campus">
+                <img src="img/preescolar.jpg" alt="Preescolar">
+                <div class="gallery-caption">Ambiente Afectivo en Preescolar</div>
+            </div>
+            <div class="gallery-item" data-category="comunidad">
+                <img src="img/estudiantes.jpg" alt="Educación Media">
+                <div class="gallery-caption">Preparación para la Educación Superior</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/Logo Colegio Divino Salvador La Estrella (2).png" alt="Logo Colegio Divino Salvador">
+                <span>Colegio Divino Salvador</span>
+            </div>
+            <p class="footer-text">Institución educativa privada comprometida con la formación integral en La Estrella, Antioquia.</p>
+            <div class="footer-copy">© 2026 Colegio Divino Salvador - Todos los derechos reservados.</div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me" class="whatsapp-float" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+    <script src="js/main.js"></script>
+</body>
+</html>
